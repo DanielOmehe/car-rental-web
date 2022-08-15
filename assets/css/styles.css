@@ -17,7 +17,6 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-     box-shadow: 0 0 4px rgba(0,0,0,.45);
 }
 
 #logo-container{
@@ -69,24 +68,13 @@
      margin-right: 20px;
 }
 
-.like-button{
-     margin: 10px;
-     cursor: pointer;
-}
-.notify-button{
+.icon{
      margin: 10px;
      cursor: pointer;
 }
 
-.setting-button{
-     margin: 10px;
-     cursor: pointer;
-}
-
-.profile{
+#icons .icon:last-child{
      border-radius: 50%;
-     margin: 10px;
-     cursor: pointer;
 }
 
 #content-box{
@@ -925,7 +913,541 @@
      font-weight: 600;
 }
 
-@media only screen and (min-width: 280px) and (max-width: 480px){
+@media only screen and (min-width: 401px) and (max-width: 600px){
+     #header{
+          width: 100vw;
+          height: 288px;
+          padding: 0;
+          border: 1px solid #5CAFFC;
+          position: relative;
+          box-shadow: none;
+     }
+
+     #nav-bar{
+          width: 100%;
+          border: 1px solid #3563E9;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 20px;
+     }
+
+     #logo{
+          margin: 0;
+     }
+
+     #search-bar{
+          position: absolute;
+          top: 40%;
+          left: 0;
+          margin: 0;
+          width: 100%;
+     }
+
+     .search-input{
+          width: 323px;
+          height: 58px;
+          border-radius: 5px;
+     }
+
+     .filter-icon{
+          top: -1%;
+          left: 82%;
+          padding: 18px;
+          border-radius: 5px;
+          border: 1px solid rgba(0,0,0,.25);
+     }
+
+     #icons{
+          margin: 0;
+          padding: 0;
+          border: 1px solid saddlebrown;
+          position: relative;
+     }
+
+     
+
+     #content-box{
+          padding: 30px;
+     }
+
+     #banner-container{
+          width: 100%;
+          padding: 0;
+          flex-direction: column;
+          position: relative;
+          margin-bottom: 52%;
+     }
+
+     .banner-ads-box{
+          width: 100%;
+          height: 320px;
+          margin: 20px 0;
+          position: absolute;
+          left: 0%;
+          top: -140px;
+     }
+
+     .banner-ads-box:first-child{
+          z-index: 1;
+     }
+
+     .text-box{
+          width: 100%;
+          padding: 0;
+     }
+
+     .banner-ad-title{
+          width: 100%;
+          font-size: 20px;
+          padding: 0;
+          margin-bottom: -15px;
+     }
+
+     .banner-ads-box:first-child .banner-image{
+          width: 296px;
+          height: 156px;
+          margin-left: 20px;
+          position: absolute;
+          top: 55%;
+          left: 10%;
+     }
+     
+     .banner-ads-box:last-child .banner-image{
+          width: 296px;
+          height: 156px;
+          margin-left: 20px;
+          top: 50%;
+          left: 10%;
+     }
+
+     #rental-order{
+          flex-direction: column;
+          position: relative;
+     }
+
+     #pick-up{
+          width: 100%;
+          padding: 20px;
+     }
+
+     #pick-up-title h3{
+          font-size: 16px;
+          margin: 10px 0;
+     }
+
+     #pick-up-details{
+          margin: 0;
+          width: 100%;
+     }
+
+     .pick-up-location{
+          margin: 0;
+          width: 176px;
+          height: 52px;
+          padding-left: 10px;
+     }
+
+     .pick-up-location h3{
+          font-size: 16px;
+     }
+
+     .pick-up-location p{
+          font-size: 12px;
+          margin-right: 7px;
+     }
+
+     .pick-up-date{
+          margin: 0;
+          width: 176px;
+          height: 52px;
+          padding-left: 10px;
+     }
+
+     .pick-up-date h3{
+          font-size: 16px;
+     }
+
+     .pick-up-date p{
+          font-size: 12px;
+          margin-right: 7px;
+     }
+
+     .pick-up-time{
+          margin: 0;
+          width: 176px;
+          height: 52px;
+          padding-left: 10px;
+     }
+
+     .pick-up-time h3{
+          font-size: 16px;
+     }
+
+     .pick-up-time p{
+          font-size: 12px;
+          margin-right: 7px;
+     }
+
+     #switch{
+          position: absolute;
+          top: 35%;
+     }
+
+     #drop-off{
+          width: 100%;
+          padding: 20px;
+     }
+
+     #drop-off-title h3{
+          font-size: 16px;
+          margin: 10px 0;
+     }
+
+     #drop-off-details{
+          margin: 0;
+          width: 100%;
+     }
+
+     .drop-off-location{
+          margin: 0;
+          width: 176px;
+          height: 52px;
+          padding-left: 10px;
+     }
+
+     .drop-off-location h3{
+          font-size: 16px;
+     }
+
+     .drop-off-location p{
+          font-size: 12px;
+          margin-right: 7px;
+     }
+
+     .drop-off-date{
+          margin: 0;
+          width: 176px;
+          height: 52px;
+          padding-left: 10px;
+     }
+
+     .drop-off-date h3{
+          font-size: 16px;
+     }
+
+     .drop-off-date p{
+          font-size: 12px;
+          margin-right: 7px;
+     }
+
+     .drop-off-time{
+          margin: 0;
+          width: 176px;
+          height: 52px;
+          padding-left: 10px;
+     }
+
+     .drop-off-time h3{
+          font-size: 16px;
+     }
+
+     .drop-off-time p{
+          font-size: 12px;
+          margin-right: 7px;
+     }
+
+     #car-catalogue{
+          width: 100%;
+          padding: 0;
+     }
+
+     #popular-car-heading{
+          width: 100%;
+          padding: 0;
+     }
+
+     #popular-cars-catalogue{
+          width: 100%;
+          align-items: flex-start;
+          justify-content: center;
+     }
+
+     #popular-car-container{
+          width: 100%;
+          overflow-x: auto;
+          padding: 5px 10px;
+          align-items: center;
+          /*flex-direction: column;*/
+     }
+
+     #popular-car-container::-webkit-scrollbar{
+          background: #F6F7F9;
+     }
+
+     .popular-car-box{
+          width: 300px;
+          height: 340px;
+          margin: 10px;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .popular-car-image{
+          top: 0;
+          margin: 50px 0 30px;
+     }
+
+     .popular-car-image-shadow{
+          top: 46%;
+     }
+
+     .popular-car-box:first-child{
+          margin-left: 46.5rem;
+     }
+
+     .popular-car-specifications{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: absolute;
+          bottom: 60px;
+          left: 0;
+          padding: 0 20px;
+          margin-bottom: 10px;
+     }
+
+     .popular-gasoline-specification{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0;
+     }
+     
+     .popular-gasoline-specification img{
+          margin-right: 6px;
+          width: 16px;
+     }
+     
+     .popular-gasoline-specification p{
+          font-size: 14px;
+          color: #90A3BF;
+     }
+     
+     .popular-car-specification{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 10px 0 10px -16px;
+          padding: 0;
+     }
+     
+     .popular-car-specification img{
+          margin-right: 6px;
+          width: 16px;
+     }
+     
+     .popular-car-specification p{
+          font-size: 14px;
+          color: #90A3BF;
+     }
+     
+     .popular-capacity-specification{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 10px 0;
+          padding: 0;
+     }
+
+     .popular-capacity-specification img{
+          width: 16px;
+          margin-right: 6px;
+     }
+     
+     #recommended-cars-catalogue{
+          width: 100%;
+     }
+
+     #recommended-car-heading{
+          padding: 0;
+     }
+
+     #recommended-car-container-1{
+          width: 100%;
+          flex-direction: column;
+     }
+
+     #recommended-car-container-2{
+          width: 100%;
+          flex-direction: column;
+     }
+
+     .recommended-car-box{
+          width: 100%;
+          height: 290px;
+     }
+
+     .recommended-car-image{
+          width: 214px;
+          height: 100px;
+          margin: 30px 0;
+          background-position: center;
+          background-size: cover;
+     }
+
+     .recommended-car-image-shadow{
+          position: absolute;
+          top: 50%;
+          left: 0;
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+     }
+
+     #recommended-car-container-2 > .recommended-car-box:nth-child(2) > .recommended-car-image {
+          width: 324px;
+          height: 120px;
+          left: -11%;
+          position: absolute;
+          border: 1px solid tomato;
+          background: url('images/new-mg-zs.png');
+          background-position: center;
+          background-size: cover;
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+     }
+     #recommended-car-container-2 > .recommended-car-box:nth-child(4) > .recommended-car-image {
+          width: 324px;
+          height: 120px;
+          left: -11%;
+          position: absolute;
+          border: 1px solid tomato;
+          background: url('images/new-mg-zs.png');
+          background-position: center;
+          background-size: cover;
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+     }
+     #recommended-car-container-2 > .recommended-car-box:nth-child(2) > .recommended-car-image-shadow {
+          position: absolute;
+          top: 60%;
+          left: 0;
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+          border: 1px solid #3563E9;
+     }
+     #recommended-car-container-2 > .recommended-car-box:nth-child(4) > .recommended-car-image-shadow {
+          position: absolute;
+          top: 60%;
+          left: 0;
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+          border: 1px solid #3563E9;
+     }
+
+     .recommended-car-specifications{
+          flex-direction: column;
+          left: 71%;
+          top: 20%;
+          text-align: left;
+          padding: 0;
+          width: 100px;
+          justify-content: center;
+     }
+
+     .recommended-gasoline-specification{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 10px 0 10px -35px;
+          padding: 0;
+     }
+     
+     .recommended-gasoline-specification img{
+          margin-right: 10px;
+     }
+     
+     .recommended-gasoline-specification p{
+          font-size: 14px;
+          color: #90A3BF;
+     }
+     
+     .recommended-car-specification{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 10px 0 10px -16px;
+          padding: 0;
+     }
+     
+     .recommended-car-specification img{
+          margin-right: 10px;
+     }
+     
+     .recommended-car-specification p{
+          font-size: 14px;
+          color: #90A3BF;
+     }
+     
+     .recommended-capacity-specification{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 10px 0 10px -10px;
+          padding: 0;
+     }
+     
+     .recommended-capacity-specification img{
+          margin-right: 10px;
+     }
+     
+     .recommended-capacity-specification p{
+          font-size: 14px;
+          color: #90A3BF;
+     }
+
+     #show-more{
+          width: 100%;
+          justify-content: space-between;
+          padding: 0;
+     }
+
+     #show-more-car{
+          width: 100%;
+          margin-left: 30%;
+     }
+
+     #footer{
+          padding: 35px;
+     }
+
+     #footer-info-row{
+          align-items: flex-start;
+          flex-direction: column;
+     }
+
+     #info-row{
+          flex-wrap: wrap;
+     }
+
+     .info-column{
+          padding-right: 40px;
+          margin: 0;
+     }
+
+     .info-menu-links{
+          color: #90A3BF;
+     }
+
+     #footer-copyright-row{
+          flex-direction: column-reverse;
+          align-items: flex-start;
+     }
+
+     .policies-and-conditions{
+          width: 100%;
+          justify-content: space-between;
+          margin-bottom: 40px;
+          margin-top: -40px;
+     }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 400px){
      #header{
           width: 100vw;
      }
@@ -938,10 +1460,11 @@
           padding: 20px;
      }
 
-     #logo{
+     #icons{
           position: absolute;
-          top: 0;
-          left: 0;
+     }
+
+     #logo{
           margin: 20px;
      }
 
@@ -972,18 +1495,6 @@
           top: 0;
           right: 0;
           margin: 10px;
-     }
-
-     .like-button{
-          display: none;
-     }
-
-     .notify-button{
-          display: none;
-     }
-
-     .setting-button{
-          display: none;
      }
 
      #content-box{
@@ -1321,6 +1832,43 @@
           top: 50%;
           left: 0;
           background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+     }
+
+     #recommended-car-container-2 > .recommended-car-box:nth-child(2) > .recommended-car-image {
+          width: 324px;
+          height: 120px;
+          left: -11%;
+          position: absolute;
+          border: 1px solid tomato;
+          background: url('images/new-mg-zs.png');
+          background-position: center;
+          background-size: cover;
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+     }
+     #recommended-car-container-2 > .recommended-car-box:nth-child(4) > .recommended-car-image {
+          width: 324px;
+          height: 120px;
+          left: -11%;
+          position: absolute;
+          border: 1px solid tomato;
+          background: url('images/new-mg-zs.png');
+          background-position: center;
+          background-size: cover;
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+     }
+     #recommended-car-container-2 > .recommended-car-box:nth-child(2) > .recommended-car-image-shadow {
+          position: absolute;
+          top: 60%;
+          left: 0;
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+          border: 1px solid #3563E9;
+     }
+     #recommended-car-container-2 > .recommended-car-box:nth-child(4) > .recommended-car-image-shadow {
+          position: absolute;
+          top: 60%;
+          left: 0;
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+          border: 1px solid #3563E9;
      }
 
      .recommended-car-specifications{
