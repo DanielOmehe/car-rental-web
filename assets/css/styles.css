@@ -33,8 +33,8 @@
 
 #search-bar{
      position: relative;
-     padding: 0 20px;
-     margin-left: 40px;
+     padding: 0;
+     left: -15%;
 }
 
 .search-icon{
@@ -933,19 +933,19 @@
           position: absolute;
           top: 40%;
           left: 0;
-          margin: 0;
           width: 100%;
      }
 
      .search-input{
-          width: 323px;
+          width: 300px;
           height: 58px;
+          margin-left: 5%;
           border-radius: 5px;
      }
 
      .filter-icon{
           top: -1%;
-          left: 82%;
+          left: 81%;
           padding: 18px;
           border-radius: 5px;
           border: 1px solid rgba(0,0,0,.25);
@@ -1378,6 +1378,12 @@
      #show-more-car{
           width: 100%;
           margin-left: 30%;
+     }
+
+     .show-more-car{
+          width: 140px;
+          height: 40px;
+          font-size: 14px;
      }
 
      #footer{
@@ -1905,11 +1911,18 @@
           justify-content: space-between;
           padding: 0;
           margin-top: 30px;
+          border: 1px solid #3563E9;
      }
 
      #show-more-car{
           width: 100%;
           margin-left: 27%;
+     }
+
+     .show-more-car{
+          width: 120px;
+          height: 36px;
+          font-size: 12px;
      }
 
      #footer{
