@@ -39,14 +39,14 @@
 
 .search-icon{
      position: absolute;
-     left: 8%;
+     left: 4%;
      top: 25%;
      cursor: pointer;
 }
 
 .filter-icon{
      position: absolute;
-     left: 88%;
+     left: 91%;
      top: 25%;
      cursor: pointer;
 }
@@ -945,7 +945,7 @@
 
      .filter-icon{
           top: -1%;
-          left: 81%;
+          left: 82%;
           padding: 18px;
           border-radius: 5px;
           border: 1px solid rgba(0,0,0,.25);
