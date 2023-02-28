@@ -932,7 +932,7 @@
      #search-bar{
           position: absolute;
           top: 40%;
-          left: 0;
+          left: 10px;
           width: 100%;
      }
 
